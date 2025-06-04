@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="AppTitle">Конфигуратор ПК</system:String>
+    <system:String x:Key="CPUHeader">Процессор</system:String>
+    <system:String x:Key="GPUHeader">Видеокарта</system:String>
+    <system:String x:Key="RAMHeader">Оперативная память</system:String>
+    <system:String x:Key="MBHeader">Материнская плата</system:String>
+    <system:String x:Key="PSUHeader">Блок питания</system:String>
+    <system:String x:Key="StorageHeader">Накопитель</system:String>
+    <system:String x:Key="CoolerHeader">Охлаждение</system:String>
+    <system:String x:Key="CaseHeader">Корпус</system:String>
+    <system:String x:Key="SelectComponentPrompt">Выберите компонент для просмотра деталей</system:String>
+    <system:String x:Key="ConfigHeader">Ваша сборка</system:String>
+    <system:String x:Key="ToggleThemeTooltip">Переключить тему</system:String>
+    <system:String x:Key="SaveButton">Сохранить</system:String>
+    <system:String x:Key="ResetButton">Сбросить</system:String>
+    <system:String x:Key="ManageComponentsButton">Управление компонентами</system:String>
+    <system:String x:Key="UndoTooltip">Назад</system:String>
+    <system:String x:Key="RedoTooltip">Вперёд</system:String>
+    <system:String x:Key="AccountButton">Личный кабинет</system:String>
+    <system:String x:Key="LoginTitle">Вход</system:String>
+    <system:String x:Key="RegisterTitle">Регистрация</system:String>
+    <system:String x:Key="LoginButton">Войти</system:String>
+    <system:String x:Key="RegisterButton">Зарегистрироваться</system:String>
+    <system:String x:Key="SwitchToLogin">Вход</system:String>
+    <system:String x:Key="SwitchToRegister">Регистрация</system:String>
+    <system:String x:Key="UsernamePrompt">Имя пользователя</system:String>
+    <system:String x:Key="PasswordPrompt">Пароль</system:String>
+    <system:String x:Key="EmailPrompt">Email</system:String>
+    <system:String x:Key="AdminOnlyMessage">Только администраторы могут управлять компонентами</system:String>
+    <system:String x:Key="OrderButton">Оформление заказа</system:String>
+    <system:String x:Key="OrderHistory">История заказов</system:String>
+    <system:String x:Key="ReportButton">Генерация отчетов</system:String>
+
+
+</ResourceDictionary>

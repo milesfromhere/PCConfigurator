@@ -1,0 +1,29 @@
+﻿<Application x:Class="PCConfigurator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:conv="clr-namespace:PCConfigurator.Converters">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Слияние словарей ресурсов -->
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Тема -->
+                <ResourceDictionary Source="Resources/LightStyles.xaml"/>
+                <!-- Язык -->
+                <ResourceDictionary Source="Resources/Strings.ru-RU.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Конвертеры -->
+            <conv:BoolToStarConverter x:Key="BoolToStarConverter"/>
+            <conv:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+            <conv:BoolToAuthButtonConverter x:Key="BoolToAuthButtonConverter"/>
+            <conv:BoolToAuthCommandConverter x:Key="BoolToAuthCommandConverter"/>
+            <conv:BoolToAuthTitleConverter x:Key="BoolToAuthTitleConverter"/>
+            <conv:BoolToSwitchButtonConverter x:Key="BoolToSwitchButtonConverter"/>
+            <conv:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+            <conv:ThemeIconConverter x:Key="ThemeIconConverter"/>
+            <conv:BlockStatusConverter x:Key="BlockStatusConverter"/>
+            <conv:InverseBooleanToVisibilityConverter x:Key="InverseBoolToVis"/>
+            <!-- Кастомный курсор -->
+            <Cursor x:Key="MyCustomCursor">C:\Users\nikit\OneDrive\Рабочий стол\proj\Resources\Cursor.cur</Cursor>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

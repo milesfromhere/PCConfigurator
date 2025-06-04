@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="PCConfigurator.Controls.ThemeSwitchButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="ThemeSwitch"
+             Height="30" Width="100">
+    <ToggleButton x:Name="Toggle" 
+                  IsChecked="{Binding IsDarkTheme, ElementName=ThemeSwitch, Mode=TwoWay}"
+                  Width="100" Height="30" Background="Transparent" BorderThickness="0">
+        <ToggleButton.Template>
+            <ControlTemplate TargetType="ToggleButton">
+                <Border x:Name="SwitchBorder" CornerRadius="20" Background="LightGray" BorderBrush="Gray" BorderThickness="1" Padding="4">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Значок для тёмной темы (если включено) -->
+                        <TextBlock x:Name="DarkIcon" Text="🌙" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <!-- Значок для светлой темы (если выключено) -->
+                        <TextBlock x:Name="LightIcon" Text="☀️" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1"/>
+                    </Grid>
+                </Border>
+                <ControlTemplate.Triggers>
+                    <!-- При включённом состоянии (IsChecked == true) показываем тёмную тему -->
+                    <Trigger Property="IsChecked" Value="True">
+                        <Setter TargetName="SwitchBorder" Property="Background" Value="DarkSlateGray"/>
+                        <Setter TargetName="DarkIcon" Property="Opacity" Value="1"/>
+                        <Setter TargetName="LightIcon" Property="Opacity" Value="0.3"/>
+                    </Trigger>
+                    <!-- При выключенном (IsChecked == false) – светлую тему -->
+                    <Trigger Property="IsChecked" Value="False">
+                        <Setter TargetName="SwitchBorder" Property="Background" Value="LightGoldenrodYellow"/>
+                        <Setter TargetName="DarkIcon" Property="Opacity" Value="0.3"/>
+                        <Setter TargetName="LightIcon" Property="Opacity" Value="1"/>
+                    </Trigger>
+                    <!-- При наведении изменяем фон -->
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter TargetName="SwitchBorder" Property="Background" Value="Gray"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </ToggleButton.Template>
+    </ToggleButton>
+</UserControl>

@@ -1,0 +1,75 @@
+﻿<Window x:Class="PCConfigurator.Views.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:helpers="clr-namespace:PCConfigurator.Helpers"
+        xmlns:conv="clr-namespace:PCConfigurator.Converters"
+        xmlns:validators="clr-namespace:PCConfigurator"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация/Регистрация" Height="500" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="{DynamicResource BackgroundBrush}"
+        Icon="C:\Users\nikit\OneDrive\Рабочий стол\proj\icon.png">
+    <Window.Resources>
+        <conv:InverseBooleanToVisibilityConverter x:Key="InverseBoolToVis"/>
+        <conv:BoolToAuthTitleConverter x:Key="BoolToAuthTitleConverter"/>
+        <conv:BoolToAuthButtonConverter x:Key="BoolToAuthButtonConverter"/>
+        <conv:BoolToSwitchButtonConverter x:Key="BoolToSwitchButtonConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Border Background="{DynamicResource SecondaryBackgroundBrush}" 
+            CornerRadius="10" Padding="20" Margin="20">
+            <StackPanel>
+                <!-- Заголовок (режим смены: Вход/Регистрация) -->
+                <TextBlock Text="{Binding IsLoginMode, Converter={StaticResource BoolToAuthTitleConverter}}" 
+                   FontSize="28" FontWeight="Bold" 
+                   Foreground="{DynamicResource ForegroundBrush}"
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+                <!-- Имя пользователя с валидацией -->
+                <TextBlock Text="Имя пользователя:" Foreground="{DynamicResource ForegroundBrush}" Margin="0,5"/>
+                <TextBox Height="30" Margin="0,5" Background="{DynamicResource TextBoxBackgroundBrush}" Foreground="{DynamicResource ForegroundBrush}">
+                    <TextBox.Text>
+                        <Binding Path="Username" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                            <Binding.ValidationRules>
+                                <validators:UsernameValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <!-- Поле для ввода пароля с привязкой через PasswordBoxAssistant -->
+                <TextBlock Text="Пароль:" Foreground="{DynamicResource ForegroundBrush}" Margin="0,5"/>
+                <PasswordBox Height="30" Margin="0,5"
+                     Background="{DynamicResource TextBoxBackgroundBrush}" 
+                     Foreground="{DynamicResource ForegroundBrush}"
+                     helpers:PasswordBoxAssistant.BindPassword="True"
+                     helpers:PasswordBoxAssistant.BoundPassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <!-- Если необходимо добавить валидацию через ValidationRules, можно использовать альтернативное решение,
+               например, создать класс-обёртку или использовать преобразование через IDataErrorInfo -->
+                </PasswordBox>
+                <!-- Поле для Email (для регистрации) с валидацией -->
+                <StackPanel Visibility="{Binding IsLoginMode, Converter={StaticResource InverseBoolToVis}}">
+                    <TextBlock Text="Email:" Foreground="{DynamicResource ForegroundBrush}" Margin="0,5"/>
+                    <TextBox Height="30" Margin="0,5" Background="{DynamicResource TextBoxBackgroundBrush}" Foreground="{DynamicResource ForegroundBrush}">
+                        <TextBox.Text>
+                            <Binding Path="Email" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                                <Binding.ValidationRules>
+                                    <validators:EmailValidationRule/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+                <!-- Кнопки действий -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                    <Button Content="{Binding IsLoginMode, Converter={StaticResource BoolToAuthButtonConverter}}" 
+                  Command="{Binding SubmitCommand}" 
+                  Width="120" Height="35" Margin="5" 
+                  Style="{DynamicResource ModernButton}"/>
+                    <Button Content="{Binding IsLoginMode, Converter={StaticResource BoolToSwitchButtonConverter}}" 
+                  Command="{Binding SwitchModeCommand}" 
+                  Width="120" Height="35" Margin="5" 
+                  Style="{DynamicResource ModernButton}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

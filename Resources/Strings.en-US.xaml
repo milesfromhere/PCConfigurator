@@ -1,0 +1,37 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="AppTitle">PC Configurator</system:String>
+    <system:String x:Key="CPUHeader">CPU</system:String>
+    <system:String x:Key="GPUHeader">GPU</system:String>
+    <system:String x:Key="RAMHeader">RAM</system:String>
+    <system:String x:Key="MBHeader">Motherboard</system:String>
+    <system:String x:Key="PSUHeader">Power Supply</system:String>
+    <system:String x:Key="StorageHeader">Storage</system:String>
+    <system:String x:Key="CoolerHeader">Cooling</system:String>
+    <system:String x:Key="CaseHeader">Case</system:String>
+    <system:String x:Key="SelectComponentPrompt">Select component to view details</system:String>
+    <system:String x:Key="ConfigHeader">Your Configuration</system:String>
+    <system:String x:Key="ToggleThemeTooltip">Toggle theme</system:String>
+    <system:String x:Key="SaveButton">Save</system:String>
+    <system:String x:Key="ResetButton">Reset</system:String>
+    <system:String x:Key="ManageComponentsButton">Components managment</system:String>
+    <system:String x:Key="UndoTooltip">Undo</system:String>
+    <system:String x:Key="RedoTooltip">Redo</system:String>
+    <system:String x:Key="AccountButton">Account</system:String>
+    <system:String x:Key="LoginTitle">Login</system:String>
+    <system:String x:Key="RegisterTitle">Register</system:String>
+    <system:String x:Key="LoginButton">Login</system:String>
+    <system:String x:Key="RegisterButton">Register</system:String>
+    <system:String x:Key="SwitchToLogin">Login</system:String>
+    <system:String x:Key="SwitchToRegister">Register</system:String>
+    <system:String x:Key="UsernamePrompt">Username</system:String>
+    <system:String x:Key="PasswordPrompt">Password</system:String>
+    <system:String x:Key="EmailPrompt">Email</system:String>
+    <system:String x:Key="AdminOnlyMessage">Only admins can manage components</system:String>
+    <system:String x:Key="OrderButton">Order now</system:String>
+    <system:String x:Key="OrderHistory">Orders history</system:String>
+    <system:String x:Key="ReportButton">Report generation</system:String>
+
+</ResourceDictionary>

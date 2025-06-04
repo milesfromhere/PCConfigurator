@@ -1,0 +1,988 @@
+{
+  "CPUs": [
+    {
+      "Name": "AMD Ryzen 5 5600X",
+      "Price": 683.64,
+      "ImagePath": " Images\\cpu\\ryzen5600x.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 6",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 12",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.7-4.6 \u0413\u0413\u0446",
+        "TDP: 65W",
+        "\u0421\u043E\u043A\u0435\u0442: AM4"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "Intel Core i5-12400F",
+      "Price": 575.64,
+      "ImagePath": " Images\\cpu\\12400f.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 6",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 12",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 2.5-4.4 \u0413\u0413\u0446",
+        "TDP: 65W",
+        "\u0421\u043E\u043A\u0435\u0442: LGA1700"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "AMD Ryzen 7 5800X",
+      "Price": 899.64,
+      "ImagePath": " Images\\cpu\\5800x.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 8",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 16",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.8-4.7 \u0413\u0413\u0446",
+        "TDP: 105W",
+        "\u0421\u043E\u043A\u0435\u0442: AM4"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "Intel Core i7-12700K",
+      "Price": 1043.64,
+      "ImagePath": " Images\\cpu\\12700k.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 12",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 20",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.6-5.0 \u0413\u0413\u0446",
+        "TDP: 125W",
+        "\u0421\u043E\u043A\u0435\u0442: LGA1700"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "AMD Ryzen 9 5950X",
+      "Price": 1619.64,
+      "ImagePath": " Images\\cpu\\5900x.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 16",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 32",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.4-4.9 \u0413\u0413\u0446",
+        "TDP: 105W",
+        "\u0421\u043E\u043A\u0435\u0442: AM4"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "Intel Core i9-12900K",
+      "Price": 1799.64,
+      "ImagePath": " Images\\cpu\\12900k.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 16",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 24",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.2-5.2 \u0413\u0413\u0446",
+        "TDP: 125W",
+        "\u0421\u043E\u043A\u0435\u0442: LGA1700"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "AMD Ryzen 5 3600",
+      "Price": 467.64,
+      "ImagePath": " Images\\cpu\\3600.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 6",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 12",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.6-4.2 \u0413\u0413\u0446",
+        "TDP: 65W",
+        "\u0421\u043E\u043A\u0435\u0442: AM4"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "Intel Core i3-12100F",
+      "Price": 323.64,
+      "ImagePath": " Images\\cpu\\121000f.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 4",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 8",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.3-4.3 \u0413\u0413\u0446",
+        "TDP: 58W",
+        "\u0421\u043E\u043A\u0435\u0442: LGA1700"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "AMD Ryzen 9 5900X",
+      "Price": 1367.64,
+      "ImagePath": " Images\\cpu\\5900x.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 12",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 24",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.7-4.8 \u0413\u0413\u0446",
+        "TDP: 105W",
+        "\u0421\u043E\u043A\u0435\u0442: AM4"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    },
+    {
+      "Name": "Intel Core i5-12600K",
+      "Price": 827.64,
+      "ImagePath": " Images\\cpu\\12400f.png",
+      "Specifications": [
+        "\u042F\u0434\u0440\u0430: 10",
+        "\u041F\u043E\u0442\u043E\u043A\u0438: 16",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 3.7-4.9 \u0413\u0413\u0446",
+        "TDP: 125W",
+        "\u0421\u043E\u043A\u0435\u0442: LGA1700"
+      ],
+      "Category": "\u041F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440"
+    }
+  ],
+  "GPUs": [
+    {
+      "Name": "NVIDIA GeForce RTX 3060",
+      "Price": 1439.64,
+      "ImagePath": " Images\\gpu\\rtx3060.png",
+      "Specifications": [
+        "12GB GDDR6",
+        "3584 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1320-1777 \u041C\u0413\u0446",
+        "TDP: 170W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "AMD Radeon RX 6600 XT",
+      "Price": 1547.64,
+      "ImagePath": " Images\\gpu\\6600xt.png",
+      "Specifications": [
+        "8GB GDDR6",
+        "2048 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1968-2589 \u041C\u0413\u0446",
+        "TDP: 160W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 3070",
+      "Price": 2159.64,
+      "ImagePath": " Images\\gpu\\rtx3080.png",
+      "Specifications": [
+        "8GB GDDR6",
+        "5888 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1500-1725 \u041C\u0413\u0446",
+        "TDP: 220W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "AMD Radeon RX 6700 XT",
+      "Price": 1979.64,
+      "ImagePath": " Images\\gpu\\6700xt.png",
+      "Specifications": [
+        "12GB GDDR6",
+        "2560 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 2424-2581 \u041C\u0413\u0446",
+        "TDP: 230W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 3080",
+      "Price": 2879.64,
+      "ImagePath": " Images\\gpu\\rtx3080.png",
+      "Specifications": [
+        "10GB GDDR6X",
+        "8704 \u044F\u0434\u0440\u0430",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1440-1710 \u041C\u0413\u0446",
+        "TDP: 320W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "AMD Radeon RX 6800",
+      "Price": 2519.64,
+      "ImagePath": " Images\\gpu\\rtx3080.png",
+      "Specifications": [
+        "16GB GDDR6",
+        "3840 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1815-2105 \u041C\u0413\u0446",
+        "TDP: 250W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 3090",
+      "Price": 4679.64,
+      "ImagePath": " Images\\gpu\\RTX3090.png",
+      "Specifications": [
+        "24GB GDDR6X",
+        "10496 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1395-1695 \u041C\u0413\u0446",
+        "TDP: 350W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "AMD Radeon RX 6900 XT",
+      "Price": 3239.64,
+      "ImagePath": " Images\\gpu\\rx6900xt.png",
+      "Specifications": [
+        "16GB GDDR6",
+        "5120 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 2015-2250 \u041C\u0413\u0446",
+        "TDP: 300W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 3050",
+      "Price": 1079.64,
+      "ImagePath": " Images\\gpu\\rtx3060.png",
+      "Specifications": [
+        "8GB GDDR6",
+        "2560 \u044F\u0434\u0435\u0440",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 1552-1777 \u041C\u0413\u0446",
+        "TDP: 130W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    },
+    {
+      "Name": "AMD Radeon RX 6500 XT",
+      "Price": 899.64,
+      "ImagePath": " Images\\gpu\\6500xt.png",
+      "Specifications": [
+        "4GB GDDR6",
+        "1024 \u044F\u0434\u0440\u0430",
+        "\u0427\u0430\u0441\u0442\u043E\u0442\u0430: 2610-2815 \u041C\u0413\u0446",
+        "TDP: 107W"
+      ],
+      "Category": "\u0412\u0438\u0434\u0435\u043E\u043A\u0430\u0440\u0442\u0430"
+    }
+  ],
+  "RAMs": [
+    {
+      "Name": "Corsair Vengeance LPX 16GB",
+      "Price": 215.64,
+      "ImagePath": " Images\\ram\\Corsair Vengeance LPX 16GB.png",
+      "Specifications": [
+        "DDR4 3200MHz",
+        "CL16",
+        "2x8GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "Kingston Fury Beast 32GB",
+      "Price": 395.64,
+      "ImagePath": " Images\\ram\\Kingston Fury Beast 32GB.png",
+      "Specifications": [
+        "DDR4 3600MHz",
+        "CL18",
+        "2x16GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "G.Skill Trident Z RGB 32GB",
+      "Price": 467.64,
+      "ImagePath": " Images\\ram\\G.Skill Trident Z RGB 32GB.png",
+      "Specifications": [
+        "DDR4 3600MHz",
+        "CL16",
+        "2x16GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "Crucial Ballistix 16GB",
+      "Price": 197.64,
+      "ImagePath": " Images\\ram\\Crucial Ballistix 16GB.png",
+      "Specifications": [
+        "DDR4 3200MHz",
+        "CL16",
+        "2x8GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "HyperX Predator 32GB",
+      "Price": 431.64,
+      "ImagePath": " Images\\ram\\HyperX Predator 32GB.png",
+      "Specifications": [
+        "DDR4 3200MHz",
+        "CL16",
+        "2x16GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "Patriot Viper Steel 16GB",
+      "Price": 179.64,
+      "ImagePath": " Images\\ram\\Patriot Viper Steel 16GB.png",
+      "Specifications": [
+        "DDR4 3200MHz",
+        "CL16",
+        "2x8GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "Team Group T-Force Delta RGB 32GB",
+      "Price": 413.64,
+      "ImagePath": " Images\\ram\\eam Group T-Force Delta RGB 32GB.png",
+      "Specifications": [
+        "DDR4 3600MHz",
+        "CL18",
+        "2x16GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "ADATA XPG Spectrix D50 16GB",
+      "Price": 233.64,
+      "ImagePath": " Images\\ram\\ADATA XPG Spectrix D50 16GB.png",
+      "Specifications": [
+        "DDR4 3600MHz",
+        "CL18",
+        "2x8GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "G.Skill Ripjaws V 64GB",
+      "Price": 683.64,
+      "ImagePath": " Images\\ram\\G.Skill Ripjaws V 64GB.png",
+      "Specifications": [
+        "DDR4 3200MHz",
+        "CL16",
+        "2x32GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.35V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    },
+    {
+      "Name": "Kingston ValueRAM 8GB",
+      "Price": 107.64,
+      "ImagePath": " Images\\ram\\Kingston ValueRAM 8GB.png",
+      "Specifications": [
+        "DDR4 2666MHz",
+        "CL19",
+        "1x8GB",
+        "\u041D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435: 1.2V"
+      ],
+      "Category": "\u041E\u043F\u0435\u0440\u0430\u0442\u0438\u0432\u043D\u0430\u044F \u043F\u0430\u043C\u044F\u0442\u044C"
+    }
+  ],
+  "Motherboards": [
+    {
+      "Name": "ASUS ROG Strix B550-F",
+      "Price": 539.64,
+      "ImagePath": " Images\\motherboard\\ASUS ROG Strix B550-F.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD B550",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "MSI MAG B660 Tomahawk",
+      "Price": 611.64,
+      "ImagePath": " Images\\motherboard\\MSI MAG B660 Tomahawk.png",
+      "Specifications": [
+        "Socket LGA1700",
+        "Intel B660",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "Gigabyte X570 Aorus Elite",
+      "Price": 683.64,
+      "ImagePath": " Images\\motherboard\\Gigabyte X570 Aorus Elite.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD X570",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "ASRock Z690 Phantom Gaming",
+      "Price": 791.64,
+      "ImagePath": " Images\\motherboard\\ASRock Z690 Phantom Gaming.png",
+      "Specifications": [
+        "Socket LGA1700",
+        "Intel Z690",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "ASUS TUF Gaming B450-Plus",
+      "Price": 359.64,
+      "ImagePath": " Images\\motherboard\\ASUS TUF Gaming B450-Plus.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD B450",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "MSI MPG B550 Gaming Plus",
+      "Price": 467.64,
+      "ImagePath": " Images\\motherboard\\MSI MPG B550 Gaming Plus.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD B550",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: ATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "Gigabyte B660M DS3H",
+      "Price": 395.64,
+      "ImagePath": " Images\\motherboard\\Gigabyte B660M DS3H.png",
+      "Specifications": [
+        "Socket LGA1700",
+        "Intel B660",
+        "4 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: mATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "ASUS Prime H510M-K",
+      "Price": 287.64,
+      "ImagePath": " Images\\motherboard\\ASUS Prime H510M-K.png",
+      "Specifications": [
+        "Socket LGA1200",
+        "Intel H510",
+        "2 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: mATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "Biostar B450MH",
+      "Price": 215.64,
+      "ImagePath": " Images\\motherboard\\Biostar B450MH.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD B450",
+        "2 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: mATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    },
+    {
+      "Name": "ASRock A520M-HDV",
+      "Price": 197.64,
+      "ImagePath": " Images\\motherboard\\ASRock A520M-HDV.png",
+      "Specifications": [
+        "Socket AM4",
+        "AMD A520",
+        "2 \u0441\u043B\u043E\u0442\u0430 DDR4",
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: mATX"
+      ],
+      "Category": "\u041C\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0430\u044F \u043F\u043B\u0430\u0442\u0430"
+    }
+  ],
+  "PSUs": [
+    {
+      "Name": "Corsair RM750x",
+      "Price": 395.64,
+      "ImagePath": " Images\\psu\\Corsair RM750x.png",
+      "Specifications": [
+        "750W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u0443\u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 135mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "be quiet! Straight Power 11 850W",
+      "Price": 467.64,
+      "ImagePath": " Images\\psu\\be quiet! Straight Power 11 850W.png",
+      "Specifications": [
+        "850W",
+        "80\u002B Platinum",
+        "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 135mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Seasonic Focus GX-650",
+      "Price": 323.64,
+      "ImagePath": " Images\\psu\\Seasonic Focus GX-650.png",
+      "Specifications": [
+        "650W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 120mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "EVGA SuperNOVA 850 G6",
+      "Price": 431.64,
+      "ImagePath": " Images\\psu\\EVGA SuperNOVA 850 G6.png",
+      "Specifications": [
+        "850W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 140mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Thermaltake Toughpower GF1 750W",
+      "Price": 359.64,
+      "ImagePath": " Images\\psu\\Thermaltake Toughpower GF1 750W.png",
+      "Specifications": [
+        "750W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 140mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Cooler Master MWE Gold 550",
+      "Price": 215.64,
+      "ImagePath": " Images\\psu\\Cooler Master MWE Gold 550.png",
+      "Specifications": [
+        "550W",
+        "80\u002B Gold",
+        "\u041D\u0435 \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 120mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "FSP Hydro G Pro 1000W",
+      "Price": 539.64,
+      "ImagePath": " Images\\psu\\FSP Hydro G Pro 1000W.png",
+      "Specifications": [
+        "1000W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 140mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Deepcool DQ750-M",
+      "Price": 287.64,
+      "ImagePath": " Images\\psu\\Deepcool DQ750-M.png",
+      "Specifications": [
+        "750W",
+        "80\u002B Gold",
+        "\u041F\u043E\u043B\u0443\u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 120mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Chieftec Proton 650W",
+      "Price": 251.64,
+      "ImagePath": " Images\\psu\\Chieftec Proton 650W.png",
+      "Specifications": [
+        "650W",
+        "80\u002B Bronze",
+        "\u041D\u0435 \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 120mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    },
+    {
+      "Name": "Aerocool Lux RGB 550W",
+      "Price": 179.64,
+      "ImagePath": " Images\\psu\\Aerocool Lux RGB 550W.png",
+      "Specifications": [
+        "550W",
+        "80\u002B Bronze",
+        "\u041D\u0435 \u043C\u043E\u0434\u0443\u043B\u044C\u043D\u044B\u0439",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440: 120mm"
+      ],
+      "Category": "\u0411\u043B\u043E\u043A \u043F\u0438\u0442\u0430\u043D\u0438\u044F"
+    }
+  ],
+  "Storages": [
+    {
+      "Name": "Samsung 980 Pro 1TB",
+      "Price": 467.64,
+      "ImagePath": " Images\\storage\\Samsung 980 Pro 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 4.0",
+        "1TB",
+        "7000/5000 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 600TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "WD Blue SN570 1TB",
+      "Price": 323.64,
+      "ImagePath": " Images\\storage\\WD Blue SN570 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 3.0",
+        "1TB",
+        "3500/3000 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 600TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Crucial P5 Plus 1TB",
+      "Price": 395.64,
+      "ImagePath": " Images\\storage\\Crucial P5 Plus 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 4.0",
+        "1TB",
+        "6600/5000 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 600TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Seagate FireCuda 530 1TB",
+      "Price": 503.64,
+      "ImagePath": " Images\\storage\\Seagate FireCuda 530 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 4.0",
+        "1TB",
+        "7300/6000 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 1275TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Kingston KC3000 1TB",
+      "Price": 431.64,
+      "ImagePath": " Images\\storage\\Kingston KC3000 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 4.0",
+        "1TB",
+        "7000/6000 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 800TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Samsung 870 EVO 1TB",
+      "Price": 359.64,
+      "ImagePath": " Images\\storage\\Samsung 870 EVO 1TB.png",
+      "Specifications": [
+        "SATA III",
+        "1TB",
+        "560/530 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 600TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "WD Black SN770 1TB",
+      "Price": 395.64,
+      "ImagePath": " Images\\storage\\WD Black SN770 1TB.png",
+      "Specifications": [
+        "NVMe PCIe 4.0",
+        "1TB",
+        "5150/4900 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 600TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Crucial MX500 1TB",
+      "Price": 287.64,
+      "ImagePath": " Images\\storage\\Crucial MX500 1TB.png",
+      "Specifications": [
+        "SATA III",
+        "1TB",
+        "560/510 \u041C\u0411/\u0441",
+        "\u0420\u0435\u0441\u0443\u0440\u0441: 360TBW"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Seagate BarraCuda 2TB",
+      "Price": 215.64,
+      "ImagePath": " Images\\storage\\Seagate BarraCuda 2TB.png",
+      "Specifications": [
+        "HDD 3.5\u0022",
+        "2TB",
+        "7200 RPM",
+        "\u041A\u044D\u0448: 256MB"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    },
+    {
+      "Name": "Toshiba P300 3TB",
+      "Price": 251.64,
+      "ImagePath": " Images\\storage\\Toshiba P300 3TB.png",
+      "Specifications": [
+        "HDD 3.5\u0022",
+        "3TB",
+        "5400 RPM",
+        "\u041A\u044D\u0448: 128MB"
+      ],
+      "Category": "\u041D\u0430\u043A\u043E\u043F\u0438\u0442\u0435\u043B\u044C"
+    }
+  ],
+  "Coolers": [
+    {
+      "Name": "Noctua NH-D15",
+      "Price": 323.64,
+      "ImagePath": " Images\\Cooler\\Noctua NH-D15.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 220W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 165mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Cooler Master Hyper 212",
+      "Price": 125.64,
+      "ImagePath": " Images\\Cooler\\Cooler Master Hyper 212.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "1 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440",
+        "TDP: 150W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 159mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "be quiet! Dark Rock Pro 4",
+      "Price": 287.64,
+      "ImagePath": " Images\\Cooler\\be quiet! Dark Rock Pro 4.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 250W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 163mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Deepcool AS500 Plus",
+      "Price": 179.64,
+      "ImagePath": " Images\\Cooler\\Deepcool AS500 Plus.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 220W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 164mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Arctic Freezer 34 eSports",
+      "Price": 143.64,
+      "ImagePath": " Images\\Cooler\\Arctic Freezer 34 eSports.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "1 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440",
+        "TDP: 210W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 157mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Scythe Fuma 2",
+      "Price": 215.64,
+      "ImagePath": " Images\\Cooler\\Scythe Fuma 2.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 200W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 155mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Thermalright Peerless Assassin 120",
+      "Price": 197.64,
+      "ImagePath": " Images\\Cooler\\Thermalright Peerless Assassin 120.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 240W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 157mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "ID-COOLING SE-224-XT",
+      "Price": 89.64,
+      "ImagePath": " Images\\Cooler\\ID-COOLING SE-224-XT.png",
+      "Specifications": [
+        "\u0411\u0430\u0448\u0435\u043D\u043D\u044B\u0439",
+        "1 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440",
+        "TDP: 180W",
+        "\u0412\u044B\u0441\u043E\u0442\u0430: 154mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "NZXT Kraken X63",
+      "Price": 431.64,
+      "ImagePath": " Images\\Cooler\\NZXT Kraken X63.png",
+      "Specifications": [
+        "\u0421\u0416\u041E 280mm",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 300W",
+        "\u0420\u0430\u0434\u0438\u0430\u0442\u043E\u0440: 280mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    },
+    {
+      "Name": "Corsair iCUE H100i RGB",
+      "Price": 395.64,
+      "ImagePath": " Images\\Cooler\\Corsair iCUE H100i RGB.png",
+      "Specifications": [
+        "\u0421\u0416\u041E 240mm",
+        "2 \u0432\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u0430",
+        "TDP: 275W",
+        "\u0420\u0430\u0434\u0438\u0430\u0442\u043E\u0440: 240mm"
+      ],
+      "Category": "\u041A\u0443\u043B\u0435\u0440"
+    }
+  ],
+  "Cases": [
+    {
+      "Name": "NZXT H510",
+      "Price": 287.64,
+      "ImagePath": " Images\\case\\NZXT H510.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 2x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Fractal Design Meshify C",
+      "Price": 323.64,
+      "ImagePath": " Images\\case\\Fractal Design Meshify C.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 2x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Lian Li PC-O11 Dynamic",
+      "Price": 539.64,
+      "ImagePath": " Images\\case\\Lian Li PC-O11 Dynamic.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Full-Tower",
+        "\u0426\u0432\u0435\u0442: \u0431\u0435\u043B\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: \u043D\u0435\u0442"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Corsair 4000D Airflow",
+      "Price": 359.64,
+      "ImagePath": " Images\\case\\Corsair 4000D Airflow.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 2x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Cooler Master MasterBox MB520",
+      "Price": 251.64,
+      "ImagePath": " Images\\case\\Cooler Master MasterBox MB520.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 3x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Phanteks Eclipse P400A",
+      "Price": 305.64,
+      "ImagePath": " Images\\case\\Phanteks Eclipse P400A.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 3x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "be quiet! Pure Base 500DX",
+      "Price": 395.64,
+      "ImagePath": " Images\\case\\be quiet! Pure Base 500DX.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 3x140mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Thermaltake Core P3",
+      "Price": 431.64,
+      "ImagePath": " Images\\case\\Thermaltake Core P3.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Open Frame",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: \u043D\u0435\u0442"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Deepcool MATREXX 55",
+      "Price": 215.64,
+      "ImagePath": " Images\\case\\Deepcool MATREXX 55.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0437\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u043E\u0435 \u0441\u0442\u0435\u043A\u043B\u043E",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 1x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    },
+    {
+      "Name": "Aerocool Cylon",
+      "Price": 179.64,
+      "ImagePath": " Images\\case\\Aerocool Cylon.png",
+      "Specifications": [
+        "\u0424\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440: Mid-Tower",
+        "\u0426\u0432\u0435\u0442: \u0447\u0435\u0440\u043D\u044B\u0439",
+        "\u041E\u043A\u043D\u043E: \u0430\u043A\u0440\u0438\u043B",
+        "\u0412\u0435\u043D\u0442\u0438\u043B\u044F\u0442\u043E\u0440\u044B: 1x120mm"
+      ],
+      "Category": "\u041A\u043E\u0440\u043F\u0443\u0441"
+    }
+  ]
+}

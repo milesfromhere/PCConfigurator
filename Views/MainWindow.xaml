@@ -1,0 +1,323 @@
+﻿<Window x:Class="PCConfigurator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PCConfigurator"
+        xmlns:conv="clr-namespace:PCConfigurator.Converters"
+        xmlns:helpers="clr-namespace:PCConfigurator.Helpers"
+        xmlns:controls="clr-namespace:PCConfigurator.Controls"
+        mc:Ignorable="d"
+        Title="{DynamicResource AppTitle}" 
+        Height="650" Width="1000"
+        MinWidth="900" MinHeight="600"
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource BackgroundBrush}"
+        Cursor="{StaticResource MyCustomCursor}"
+        Icon="C:\Users\nikit\OneDrive\Рабочий стол\proj\icon.png">
+    <Window.Resources>
+
+        <!-- Стандартные конвертеры -->
+        <conv:BoolToStarConverter x:Key="BoolToStarConverter"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <conv:InverseBooleanToVisibilityConverter x:Key="InverseBooleanToVisibilityConverter"/>
+        <Cursor x:Key="MyCustomCursor">C:\Users\nikit\OneDrive\Рабочий стол\proj\Resources\Cursor.cur</Cursor>
+
+        <!-- Общий DataTemplate для отображения компонента с кнопкой звёздочки -->
+        <DataTemplate x:Key="ComponentItemTemplate">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source="{Binding ImagePath}" 
+                       Style="{DynamicResource ComponentImageStyle}"/>
+                <TextBlock Text="{Binding Name}" 
+                           VerticalAlignment="Center"
+                           Foreground="{DynamicResource ForegroundBrush}"/>
+                <Button Command="{Binding DataContext.ToggleFavoriteCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+        CommandParameter="{Binding}"
+        Background="Transparent" BorderThickness="0">
+                    <TextBlock FontSize="16" 
+               Text="{Binding IsFavorite, Converter={StaticResource BoolToStarConverter}}">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Foreground" Value="{DynamicResource ForegroundBrush}"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsFavorite}" Value="True">
+                                        <Setter Property="Foreground" Value="Yellow"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Button>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Background="{DynamicResource BackgroundBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition Width="165"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="270"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель: список компонентов по категориям или избранное -->
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Margin="10">
+            <!-- Полный список (Expander для каждой категории), видимый когда IsFavoritesMode = false -->
+            <ScrollViewer x:Name="CategoriesPanel"
+                    VerticalScrollBarVisibility="Hidden"
+                    PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"
+                    Visibility="{Binding IsFavoritesMode, Converter={StaticResource InverseBooleanToVisibilityConverter}}">
+                <StackPanel Background="{DynamicResource SecondaryBackgroundBrush}">
+                    <!-- Expander для процессоров -->
+                    <Expander Header="{DynamicResource CPUHeader}" Name="CPUExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding CPUs}" SelectedItem="{Binding SelectedCPU}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для видеокарт -->
+                    <Expander Header="{DynamicResource GPUHeader}" Name="GPUExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding GPUs}" SelectedItem="{Binding SelectedGPU}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для оперативной памяти -->
+                    <Expander Header="{DynamicResource RAMHeader}" Name="RAMExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding RAMs}" SelectedItem="{Binding SelectedRAM}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для материнских плат -->
+                    <Expander Header="{DynamicResource MBHeader}" Name="MBExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding Motherboards}" SelectedItem="{Binding SelectedMotherboard}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для блоков питания -->
+                    <Expander Header="{DynamicResource PSUHeader}" Name="PSUExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding PSUs}" SelectedItem="{Binding SelectedPSU}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для накопителей -->
+                    <Expander Header="{DynamicResource StorageHeader}" Name="StorageExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding Storages}" SelectedItem="{Binding SelectedStorage}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для кулеров -->
+                    <Expander Header="{DynamicResource CoolerHeader}" Name="CoolerExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding Coolers}" SelectedItem="{Binding SelectedCooler}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                    <!-- Expander для корпусов -->
+                    <Expander Header="{DynamicResource CaseHeader}" Name="CaseExpander" Expanded="Expander_Expanded">
+                        <ListBox ItemsSource="{Binding Cases}" SelectedItem="{Binding SelectedCase}"
+                     Style="{DynamicResource ComponentListStyle}"
+                     ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+                    </Expander>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Список избранных компонентов -->
+            <ScrollViewer VerticalScrollBarVisibility="Hidden"
+              HorizontalScrollBarVisibility="Hidden"
+              PreviewMouseWheel="ScrollViewer_PreviewMouseWheel"
+              Visibility="{Binding IsFavoritesMode, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <ListBox ItemsSource="{Binding FavoriteComponents}"
+             SelectedItem="{Binding SelectedComponent, Mode=TwoWay}"
+             Style="{DynamicResource ComponentListStyle}"
+             ItemTemplate="{StaticResource ComponentItemTemplate}"/>
+            </ScrollViewer>
+
+        </Grid>
+
+        <!-- Правая основная панель (детали выбранного компонента и текущая конфигурация) -->
+        <Border Grid.Column="3" Margin="10" Background="{DynamicResource SecondaryBackgroundBrush}" CornerRadius="5" Grid.ColumnSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Заголовок выбранного компонента -->
+                <TextBlock Text="{Binding SelectedComponent.Name}" 
+                           Grid.Row="0"
+                           Foreground="{DynamicResource ForegroundBrush}" 
+                           FontSize="20" 
+                           FontWeight="Bold"
+                           Margin="20,15"
+                           HorizontalAlignment="Center"
+                           TextWrapping="Wrap"
+                           Visibility="{Binding SelectedComponent, Converter={StaticResource NullToVisibilityConverter}}"/>
+
+                <!-- Область с изображением и характеристиками выбранного компонента -->
+                <ScrollViewer Grid.Row="1" 
+                              VerticalScrollBarVisibility="Hidden"
+                              HorizontalScrollBarVisibility="Disabled"
+                              Padding="0,0,0,10"
+                              VerticalContentAlignment="Top">
+                    <StackPanel>
+                        <Border BorderBrush="{DynamicResource HoverBackgroundBrush}" BorderThickness="1" 
+                                CornerRadius="5" 
+                                HorizontalAlignment="Center"
+                                Margin="20,0,20,20"
+                                Background="{DynamicResource BackgroundBrush}"
+                                Visibility="{Binding SelectedComponent, Converter={StaticResource NullToVisibilityConverter}}">
+                            <Image Source="{Binding SelectedComponent.ImagePath, TargetNullValue=/Resources/placeholder.png}" 
+                                   MaxHeight="400"
+                                   HorizontalAlignment="Center"
+                                   Margin="20"
+                                   Stretch="Uniform"/>
+                        </Border>
+                        <ItemsControl ItemsSource="{Binding SelectedComponent.Specifications}" 
+                                      Margin="20,0,20,0"
+                                      Visibility="{Binding SelectedComponent, Converter={StaticResource NullToVisibilityConverter}}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="0,5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Text="•" 
+                                                   Foreground="{DynamicResource PriceForegroundBrush}" 
+                                                   Margin="0,0,5,0"/>
+                                        <TextBlock Text="{Binding SpecText}" 
+                                                   Grid.Column="1"
+                                                   Foreground="{DynamicResource ForegroundBrush}" 
+                                                   TextWrapping="Wrap"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        <TextBlock Text="{DynamicResource SelectComponentPrompt}"
+                                   Foreground="{DynamicResource ForegroundBrush}"
+                                   FontSize="16"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="20"
+                                   Visibility="{Binding SelectedComponent, Converter={StaticResource NullToVisibilityConverter}, ConverterParameter=Inverse}"/>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <!-- Фиксированная плашка с ценой -->
+                <Border Grid.Row="2" 
+                        Background="{DynamicResource BackgroundBrush}" 
+                        CornerRadius="0,0,5,5"
+                        Margin="15"
+                        Visibility="{Binding SelectedComponent, Converter={StaticResource NullToVisibilityConverter}}">
+
+                    <TextBlock Text="{Binding SelectedComponent.Price, StringFormat={}{0} BYN}" 
+                                   Foreground="{DynamicResource PriceForegroundBrush}" 
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Margin="20,15"
+                                   HorizontalAlignment="Center"/>
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- Правая панель: текущая конфигурация и кнопки управления -->
+        <Border Grid.Column="5" Background="{DynamicResource BackgroundBrush}" Grid.ColumnSpan="2">
+            <StackPanel Margin="10">
+                <TextBlock Text="{DynamicResource ConfigHeader}" 
+                           Foreground="{DynamicResource ForegroundBrush}" 
+                           FontSize="18" 
+                           FontWeight="Bold"
+                           Margin="0,10"/>
+                <StackPanel Orientation="Horizontal" Margin="10" Width="275" HorizontalAlignment="Left">
+                    <Image Source="{Binding CurrentUser.AvatarPath}"
+                           Width="40" Height="40" 
+                           Margin="0,0,10,0"
+                           Stretch="UniformToFill"
+                           ClipToBounds="True"
+                           VerticalAlignment="Center"/>
+                    <Button Content="{DynamicResource AccountButton}" 
+                            HorizontalAlignment="Left" 
+                            Command="{Binding OpenProfileCommand}"
+                            Style="{DynamicResource ModernButton}"  
+                            Width="120" Height="40"/>
+                    <Button Command="{Binding ToggleFavoritesViewCommand}" 
+                  Style="{DynamicResource ModernButton}" Width="55" Height="40" Margin="10">
+                        <TextBlock FontSize="20" 
+                       Text="{Binding IsFavoritesMode, Converter={StaticResource BoolToStarConverter}}"/>
+                    </Button>
+                </StackPanel>
+
+                <!-- Панель с кнопками смены языка, темы и переключения режима "избранное"/"все" -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="-20" Width="260">
+                    <controls:LanguageToggleButton Margin="10" Width="140" />
+                    <controls:ThemeSwitchButton IsDarkTheme="{Binding IsDarkTheme, Mode=TwoWay}" HorizontalAlignment="Right" Loaded="ThemeSwitchButton_Loaded"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,10,0" Width="270" Height="5">
+                    <!-- можно добавить дополнительные элементы если нужно -->
+                </StackPanel>
+                <ItemsControl ItemsSource="{Binding CurrentConfiguration}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{Binding Name}" 
+                                               Foreground="{DynamicResource ForegroundBrush}"
+                                               FontWeight="SemiBold"/>
+                                    <TextBlock Text="{Binding Price, StringFormat={}{0} BYN}" 
+                                               Foreground="{DynamicResource PriceForegroundBrush}"
+                                               FontSize="12"/>
+                                </StackPanel>
+                                <Button Grid.Column="1" 
+                                        Content="✕" 
+                                        Width="25"
+                                        Margin="5,0,0,0"
+                                        Style="{DynamicResource ModernButton}"
+                                        Command="{Binding DataContext.RemoveComponentCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                        CommandParameter="{Binding}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+
+                <TextBlock Text="{Binding TotalPrice, StringFormat={}{0} BYN}" 
+                           Foreground="{DynamicResource ForegroundBrush}" 
+                           FontSize="16"
+                           FontWeight="Bold"
+                           Margin="0,20,0,0"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15">
+                    <Button Content="{DynamicResource SaveButton}" 
+                            Style="{DynamicResource ModernButton}"
+                            Margin="0,0,10,0"
+                            Command="{Binding SaveCommand}"/>
+                    <Button Content="{DynamicResource ResetButton}" 
+                            Style="{DynamicResource ModernButton}"
+                            Command="{Binding ResetCommand}"/>
+                    <Button Content="{DynamicResource OrderButton}"
+                            Style="{DynamicResource ModernButton}"
+                            Command="{Binding OpenOrderCommand}"
+                            Margin="10,0,0,0"/>
+                </StackPanel>
+                <Button Content="{DynamicResource ManageComponentsButton}" 
+                        Command="{Binding OpenComponentsCommand}" 
+                        Style="{DynamicResource ModernButton}" 
+                        Width="157" Height="24"
+                        Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                <Button Content="{DynamicResource OrderHistory}" Command="{Binding OpenOrderHistoryCommand}" Style="{DynamicResource ModernButton}" Margin="10,20,10,0"/>
+                <Button Content="{DynamicResource ReportButton}"
+                        Command="{Binding OpenReportsCommand}"
+                        Visibility="{Binding IsAdmin, Converter={StaticResource BooleanToVisibilityConverter}}"
+                        Style="{DynamicResource ModernButton}"
+                        Width="180" Height="30" Margin="5"/>
+
+            </StackPanel>
+        </Border>
+        
+    </Grid>
+</Window>
